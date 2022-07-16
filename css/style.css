@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: monospace, sans-serif;
+}
+
+body {
+  background-color: #333;
+}
+
+main .main__container {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .main__container .main_calculator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  border: 1px solid black;
+}
+
+main .main__container .main_calculator .main_result {
+  width: 300px;
+  height: 75px;
+  outline: none;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: right;
+  font-size: 36px;
+  padding-right: 10px;
+  background-color: transparent;
+  cursor: default;
+}
+
+main .main__container .main_calculator .main__buttons .main_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .main__container .main_calculator .main__buttons .main_row .main_button {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px;
+  background-color: #000;
+  font-size: 18px;
+  font-weight: 600;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  color: white;
+}
+
+main .main__container .main_calculator .main__buttons .main_row .main_button:hover {
+  cursor: pointer;
+}
+
+main .main__container .main_calculator .main__buttons .main_row .color {
+  color: orangered;
+}
+
+main .main__container .main_calculator .main__buttons .main_row .size {
+  font-size: 22px;
+}
+
+main .main__container .main_calculator .main__buttons .main_row .reverse {
+  width: 35px;
+  height: 35px;
+  background-image: url("../png/reverseWhite.png");
+  background-size: cover;
+}
